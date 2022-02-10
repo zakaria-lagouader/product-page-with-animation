@@ -9,8 +9,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<ProductPage />} />
-          <Route path="/cart" element={<CartPage />} />
+          <Route path="/product-page-with-animation">
+            <Route index element={<ProductPage />} />
+            <Route path="cart" element={<CartPage />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
