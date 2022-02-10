@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:focus {
+    outline: none;
+}
+
+.page-height {
+  min-height: calc(100vh - 55px);
+}
+
+/* Chrome, Safari, Edge, Opera */
+.hide-arrows::-webkit-outer-spin-button,
+.hide-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.hide-arrows {
+  -moz-appearance: textfield;
+}
